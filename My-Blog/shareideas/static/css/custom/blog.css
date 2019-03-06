@@ -1,0 +1,168 @@
+body {
+	background: #fafafa;
+	color: #333333;
+	/*margin-top: 5rem*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #444444;
+}
+
+.bg-stell {
+	background-color: ;
+}
+ 
+.site-header .navbar-nav .nav-link {
+	color: #cbd5db;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+	color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link.active {
+	font-weight: 500;
+}
+
+.content-section {
+	background: #ffffff;
+	padding: 10px 20px;
+	border: 1px solid #dddddd;
+	border-radius: 3px;
+	margin-bottom: 20px
+}
+
+.article-title {
+	color: #444444
+}
+
+a.article-title:hover {
+	color: #428bca;
+	text-decoration: none;
+}
+
+.article-content {
+	white-space: pre-line;
+} 
+
+.article-img {
+	height: 65px;
+	width: 65px;
+	margin-right: 16px;
+}
+
+.article-metadata {
+	padding-bottom: 1px;
+	margin-bottom: 4px;
+	border-bottom: 1px solid #e3e3e3
+}
+
+.article-metadata a:hover {
+	color: #333; 
+	text-decoration: none
+}
+
+.article-svg {
+	width: 25px;
+	height: 25px;
+	vertical-align: middle;
+}
+
+.account-img {
+	height: 125px;
+	width: 125px;
+	margin-right: 20px;
+	margin-bottom: 16px;
+}
+
+.account-heading {
+	font-size: 2.5rem;
+}
+
+/*.typing_text {
+    font-weight: bold;
+    text-align: center;
+    justify-content: center
+}*/
+.typed-cursor {
+    text-align: center;
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+    font-size: 1.2em
+}
+@keyframes blink {
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+
+        
+.mySelf article {
+    box-sizing: border-box;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    padding: 1em;
+}
+
+.latestP .card-header {
+    background: #000;
+    padding: 20px;
+    color: #fff;
+    font-size: 1.5em;
+    font-family: Oswald
+}
+
+.followSocial a {
+    color: #000;
+    padding: 20px 8px
+}
+.followSocial a:hover {
+    color: blue;
+}
+
+ul.listGroup li:hover {
+    background: #e3e3e3;
+    cursor: pointer;
+}
+
+.footer {
+    background: grey;
+    color: #fff;
+    padding: 40px
+}
+.tooterIcons a {
+    padding: 5px 10px;
+    color: #000;
+}
+.footerP {
+    background: #000;
+    padding: 15px;
+    width: 120px;
+    cursor: pointer;
+}
+
+.footerP a {
+    color: #fff;
+}
+
+.footerP:hover {
+    background: #e3e3e3;
+    color: #000;
+}

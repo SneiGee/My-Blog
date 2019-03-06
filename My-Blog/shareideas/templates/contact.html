@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+        	<div class="col-md-8">
+        		<div class="content-section">
+        			<div id="map" style="height: 550px;width: 100%"></div>
+        		</div>
+        	</div>
+        	<div class="col-md-4">
+                <div class="">
+                    <div class="">
+                        <section class="mySelf">
+                            <article class="description">
+                                <h4 class="text-white">My Name</h4>
+                                Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.
+                            </article>
+                        </section>
+                    </div>
+                    <br>
+                    <div class="card latestP">
+                        <div class="card-header">Latest Posts</div>
+                        <ul class="list-group listGroup">
+                            <li class="list-group-item list-group-item-light">Latest Post</li>
+                            <li class="list-group-item list-group-item-light">Announcement</li>
+                            <li class="list-group-item list-group-item-light">etc</li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div class="card latestP">
+                        <div class="card-header">Follow Social Page</div>
+                        <div class="card-body followSocial">
+                            <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+                            <a href="#"><i class="fa fa-youtube-square fa-2x"></i></a>
+                            <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+                            <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                            <a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                            <a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var map;
+	    function initMap() {
+	        map = new google.maps.Map(document.getElementById('map'), {
+	          center: {lat:51.508742, lng:-0.120850},
+	          zoom: 8
+	        });
+	    }
+    </script>
+{% endblock content %}
