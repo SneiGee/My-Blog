@@ -139,5 +139,6 @@ dmypy.json
 cython_debug/
 
 vnev/
-*egg-info
+*.egg-info
 .idea
+**/__pycache__
