@@ -1,10 +1,10 @@
 from flask import render_template, url_for, flash, redirect, request, Blueprint
 from flask_login import login_user, current_user, logout_user, login_required
-# from shareideas import db, bcrypt
-# from shareideas.models import User, Post
-# from shareideas.users.forms import (RegistrationForm, LoginForm, UpdateAccountForm,
-#                                     RequestResetForm, ResetPasswordForm)
-# from shareideas.users.utils import save_picture, send_reset_email
+from shareideas import db, bcrypt
+from shareideas.models import User, Post
+from shareideas.users.forms import (RegistrationForm, LoginForm, UpdateAccountForm,
+                                    RequestResetForm, ResetPasswordForm)
+from shareideas.users.utils import save_picture, send_reset_email
 
 users = Blueprint('users', __name__)
 

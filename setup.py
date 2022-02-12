@@ -7,5 +7,13 @@ setup(
     packages=['shareideas'],
     include_package_data=True,
     zip_safe=False,
-    install_requires=['Flask', 'flask_sqlalchemy', 'flask_bcrypt', 'flask_login', 'flask_mail', 'flask_wtf']
+    install_requires=[
+        'Flask',
+        'flask_sqlalchemy',
+        'flask_bcrypt',
+        'flask_login',
+        'flask_mail',
+        'flask_wtf',
+        'email_validator'
+    ]
 )
