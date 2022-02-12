@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="119150d3-1454-42d7-92d8-f06498aaddf2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/My-Blog/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/run.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/errors/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/errors/handlers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/main/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/main/routes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/posts/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/posts/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/posts/routes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/shareideas.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/css/custom/blog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/css/fa-brands.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/css/fa-brands.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/css/fa-regular.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/css/fa-regular.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/css/fa-solid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/css/fa-solid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/css/fontawesome-all.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/css/fontawesome-all.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/css/fontawesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/css/fontawesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/less/_animated.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/less/_bordered-pulled.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/less/_core.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/less/_fixed-width.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/less/_icons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/less/_larger.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/less/_list.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/less/_mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/less/_rotated-flipped.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/less/_screen-reader.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/less/_stacked.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/less/_variables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/less/fa-brands.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/less/fa-regular.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/less/fa-solid.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/less/fontawesome.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/scss/_animated.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/scss/_bordered-pulled.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/scss/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/scss/_fixed-width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/scss/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/scss/_larger.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/scss/_list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/scss/_rotated-flipped.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/scss/_screen-reader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/scss/_stacked.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/scss/fa-brands.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/scss/fa-regular.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/scss/fa-solid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/font-awesome/scss/fontawesome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/images/board.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/images/dog.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/images/homIma.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/images/homeI.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/images/homeImage.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/images/images.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/images/jane.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/images/nextself.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/images/self.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/images/sound.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/images/stuffs.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/images/workbench.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/jquery/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/js/jquery-slim.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/js/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/js/typed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/profile/2ff3afc31ed271e8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/profile/9d1da761ea7b48d0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/profile/acadc8492b32daf0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/static/profile/default.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/templates/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/templates/account.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/templates/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/templates/create_post.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/templates/errors/403.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/templates/errors/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/templates/errors/500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/templates/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/templates/layout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/templates/post.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/templates/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/templates/request_reset.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/templates/reset_token.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/templates/user_posts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/users/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/users/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/users/routes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Blog/shareideas/users/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="24zsspOCOrDJbgfLV1Ari0QLe2U" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/My-Blog" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/My-Blog" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="119150d3-1454-42d7-92d8-f06498aaddf2" name="Default Changelist" comment="" />
+      <created>1644644958315</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1644644958315</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

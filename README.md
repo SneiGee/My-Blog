@@ -1,6 +1,6 @@
 # My-Blog
-This blog allow users share their ideas and learn new stuff.
-This blog is build using python -> flaskr -> SQLAlchemy -> and MORE!!
+This blog allows users share their ideas and learn new stuff.
+This blog was built using python -> flaskr -> SQLAlchemy -> and MORE!!
 ## Home Page
 ![myblog1](https://user-images.githubusercontent.com/30534208/53891010-4ce9cd00-4021-11e9-939f-e7f5bbc3152a.png)
 
@@ -22,15 +22,16 @@ This blog is build using python -> flaskr -> SQLAlchemy -> and MORE!!
 ![myblog15](https://user-images.githubusercontent.com/30534208/53891919-3c3a5680-4023-11e9-96cf-4abcf5618844.png)
 ![myblog14](https://user-images.githubusercontent.com/30534208/53892002-61c76000-4023-11e9-836b-245e1e0587b5.png)![myblog13](https://user-images.githubusercontent.com/30534208/53892100-91766800-4023-11e9-8629-6b035b5cb7f2.png)
 
-## Installation
+## Creation of virtual environment
 ```bash
-Make sure python is install on your system either python 2.0 or 3.0
-pip install flask
+python3.9 -m venv venv
+. venv/bin/activate
 ``` 
-### Note: runing this projects you'll be ask to install some packages so you juct check for what module not exist then you just use
+## Install and run
 ```bash
-pip install ( the name of module/packages. )
-EG: pip install PIL
+pip install --upgrade pip
+pip install -e .
+python run.py
 ``` 
 
 ## Contributing
@@ -38,4 +39,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
-## Enjoy, Happy Coding, Thnkas XD  ....
+## Enjoy, Happy Coding, Thanks XD  ....
