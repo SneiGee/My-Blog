@@ -1,91 +1,130 @@
-{% extends "layout.html" %}
+{% extends "base.html" %}
 {% block content %}
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                {% with messages = get_flashed_messages(with_categories=true) %}
-                    {% if messages %}
-                        {% for category, message in messages %}
-                            <div class="alert alert-{{ category }}">
-                                {{ message }}
-                            </div>
-                        {% endfor %}
-                    {% endif %}
-                {% endwith %}
-                <div class="content-section">
-                	<form method="POSt" action="">
-                		{{ form.hidden_tag() }}
-                		<fieldset class="form-group">
-                			<legend class="border-bottom mb-4">Login<sup>R</sup></legend>
-                			<div class="form-group">
-                				{{ form.email.label(class="form-control-label") }}
-                				
-                                {% if form.email.errors %}
-                                    {{ form.email(class="form-control form-control-lg is-invalid") }}
-                                    <div class="invalid-feedback">
-                                        {% for error in form.email.errors %}
-                                            <span>{{ error }}</span>
-                                        {% endfor %}
-                                    </div>
-                                {% else %}
-                                    {{ form.email(class="form-control form-control-lg") }}
-                                {% endif %}
-                			</div>
-                			<div class="form-group">
-                				{{ form.password.label(class="form-control-label") }}
-                				
-                                {% if form.password.errors %}
-                                    {{ form.password(class="form-control form-control-lg is-invalid") }}
-                                    <div class="invalid-feedback">
-                                        {% for error in form.password.errors %}
-                                            <span>{{ error }}</span>
-                                        {% endfor %}
-                                    </div>
-                                {% else %}
-                                    {{ form.password(class="form-control form-control-lg") }}
-                                {% endif %}
-                			</div>
-                            <div class="form-check">
-                                {{ form.remember(class="form-check-input") }}
-                                {{ form.remember.label(class="form-check-label") }}
-                            </div>
-                		</fieldset>
-                		<div class="form-group">
-                            {{ form.submit(class="btn btn-outline-info") }}
-                            <span class="text-muted ml-3">
-                                <a href="{{ url_for('users.request_reset') }}">Forgot Password?</a>
-                            </span>
-                        </div>
-                        <small class="text-muted ml-2">
-                            Don't Have Account? <a class="ml-2" href="{{ url_for('users.register') }}">Create Account</a>
-                        </small>
-                	</form>
-                </div>
+
+<style>
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+    }
+
+    @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+         font-size: 3.5rem;
+        }
+    }
+
+    .form-signin {
+        width: 100%;
+        max-width: 330px;
+        padding: 15px;
+        margin: auto;
+    }
+
+    .form-signin .checkbox {
+        font-weight: 400;
+    }
+
+    .form-signin .form-floating:focus-within {
+        z-index: 2;
+    }
+
+    .form-signin input[type="email"] {
+        margin-bottom: -1px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .form-signin input[type="password"] {
+        margin-bottom: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+</style>
+
+<!--<main class="form-signin">-->
+<!--    <form>-->
+<!--        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>-->
+<!--        <div class="form-floating">-->
+<!--            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">-->
+<!--            <label for="floatingInput">Email address</label>-->
+<!--        </div>-->
+<!--        <div class="form-floating">-->
+<!--            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">-->
+<!--            <label for="floatingPassword">Password</label>-->
+<!--        </div>-->
+<!--        <div class="checkbox mb-3">-->
+<!--            <label>-->
+<!--                <input type="checkbox" value="remember-me"> Remember me-->
+<!--            </label>-->
+<!--        </div>-->
+<!--        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>-->
+<!--        <div class="row">-->
+<!--            <div class="col-sm-6">-->
+<!--                <p class="text-start">-->
+<!--                    <a href="{{ url_for('users.request_reset') }}">Forgot Password</a>-->
+<!--                </p>-->
+<!--            </div>-->
+<!--            <div class="col-sm-6">-->
+<!--                <p class="text-end">-->
+<!--                    <a class="ml-2" href="{{ url_for('users.register') }}">Create Account</a>-->
+<!--                </p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </form>-->
+<!--</main>-->
+
+
+<form method="POST" action="">
+    {{ form.hidden_tag() }}
+    <fieldset class="form-group">
+        <legend class="border-bottom mb-4">Login<sup>R</sup></legend>
+        <div class="form-group">
+            {{ form.email.label(class="form-control-label") }}
+            {% if form.email.errors %}
+            {{ form.email(class="form-control form-control-lg is-invalid") }}
+            <div class="invalid-feedback">
+                {% for error in form.email.errors %}
+                <span>{{ error }}</span>
+                {% endfor %}
             </div>
-            <div class="col-md-4">
-                <div class="">
-                    <div class="card latestP">
-                        <div class="card-header">Latest Posts</div>
-                        <ul class="list-group listGroup">
-                            <li class="list-group-item list-group-item-light">Latest Post</li>
-                            <li class="list-group-item list-group-item-light">Announcement</li>
-                            <li class="list-group-item list-group-item-light">etc</li>
-                        </ul>
-                    </div>
-                    <br>
-                    <div class="card latestP">
-                        <div class="card-header">Follow Social Page</div>
-                        <div class="card-body followSocial">
-                            <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
-                            <a href="#"><i class="fa fa-youtube-square fa-2x"></i></a>
-                            <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
-                            <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
-                            <a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
-                            <a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {% else %}
+            {{ form.email(class="form-control form-control-lg") }}
+            {% endif %}
         </div>
+        <div class="form-group">
+            {{ form.password.label(class="form-control-label") }}
+            {% if form.password.errors %}
+            {{ form.password(class="form-control form-control-lg is-invalid") }}
+            <div class="invalid-feedback">
+                {% for error in form.password.errors %}
+                <span>{{ error }}</span>
+                {% endfor %}
+            </div>
+            {% else %}
+            {{ form.password(class="form-control form-control-lg") }}
+            {% endif %}
+        </div>
+        <div class="form-check">
+            {{ form.remember(class="form-check-input") }}
+            {{ form.remember.label(class="form-check-label") }}
+        </div>
+    </fieldset>
+    <div class="form-group">
+        {{ form.submit(class="btn btn-outline-info") }}
+        <span class="text-muted ml-3">
+            <a href="{{ url_for('users.request_reset') }}">Forgot Password?</a>
+        </span>
     </div>
+    <small class="text-muted ml-2">
+        Don't Have Account? <a class="ml-2" href="{{ url_for('users.register') }}">Create Account</a>
+    </small>
+</form>
+
+
+
+
+
 {% endblock content %}
