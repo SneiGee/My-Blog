@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-
+<!-- Temporary CSS used for development start -->
 <style>
 .bd-placeholder-img {
 font-size: 1.125rem;
@@ -69,22 +69,20 @@ cursor: pointer
 .textarea {
 resize: none
 }
-
-
-
 </style>
-
+<!-- Temporary CSS used for development end -->
+<!-- Carousel start -->
 <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <!-- Bottom nav -->
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
+        <!-- First slide -->
         <div class="carousel-item active">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/>
-            </svg>
-
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
             <div class="container">
                 <div class="carousel-caption text-start">
                     <h1>Example headline.</h1>
@@ -93,10 +91,9 @@ resize: none
                 </div>
             </div>
         </div>
+        <!-- Second slide -->
         <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/>
-            </svg>
-
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
             <div class="container">
                 <div class="carousel-caption">
                     <h1>Another example headline.</h1>
@@ -105,10 +102,9 @@ resize: none
                 </div>
             </div>
         </div>
+        <!-- Third slide -->
         <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/>
-            </svg>
-
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
             <div class="container">
                 <div class="carousel-caption text-end">
                     <h1>One more for good measure.</h1>
@@ -118,6 +114,7 @@ resize: none
             </div>
         </div>
     </div>
+    <!-- Left and right nav buttons -->
     <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -127,12 +124,11 @@ resize: none
         <span class="visually-hidden">Next</span>
     </button>
 </div>
-</div>
-
-
-
+<!-- Carousel end -->
 <div class="container">
+    <!-- Featured posts start -->
     <div class="row mb-2">
+        <!-- First featured -->
         <div class="col-md-6">
             <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                 <div class="col p-4 d-flex flex-column position-static">
@@ -147,6 +143,7 @@ resize: none
                 </div>
             </div>
         </div>
+        <!-- Second featured -->
         <div class="col-md-6">
             <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                 <div class="col p-4 d-flex flex-column position-static">
@@ -158,37 +155,40 @@ resize: none
                 </div>
                 <div class="col-auto d-none d-lg-block">
                     <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
                 </div>
             </div>
         </div>
     </div>
+    <!-- Featured posts end -->
     <div class="row">
         <div class="col-md-8">
+            <!-- Alert messages -->
             {% with messages = get_flashed_messages(with_categories=true) %}
-            {% if messages %}
-            {% for category, message in messages %}
-            <div class="alert alert-{{ category }}">
-                {{ message }}
-            </div>
-            {% endfor %}
-            {% endif %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">
+                        {{ message }}
+                    </div>
+                    {% endfor %}
+                {% endif %}
             {% endwith %}
+            <!-- Blog start -->
             {% for post in posts.items %}
             <div class="media content-section">
+                <!-- Author -->
                 <img class="rounded-circle article-img" src="{{ url_for('static', filename='profile/' + post.author.image_file) }}">
                 <div class="media-body">
                     <div class="article-metadata">
                         <a class="mr-2" href="{{ url_for('users.user_posts', username=post.author.username) }}">{{ post.author.username }}</a>
                         <small class="text-muted">{{ post.date_posted.strftime('%B %d, %Y') }}</small>
                     </div>
+                    <!-- Content -->
                     <h2><a class="article-title" href="{{ url_for('posts.post', post_id=post.id) }}">{{ post.title }}</a></h2>
                     <p class="article-content">{{ post.content }}</p>
-
-                    <!--                    <div class="container mt-5">-->
-                    <!--                        <div class="d-flex justify-content-center row">-->
+                    <!-- Comments and links start -->
                     <div class="col-md-8">
                         <div class="d-flex flex-column comment-section">
+                            <!-- Comments -->
                             <div class="bg-white p-2">
                                 <div class="d-flex flex-row user-info"><img class="rounded-circle" src="https://i.imgur.com/RpzrMR2.jpg" width="40">
                                     <div class="d-flex flex-column justify-content-start ml-2"><span class="d-block font-weight-bold name">Marry Andrews</span><span class="date text-black-50">Shared publicly - Jan 2020</span></div>
@@ -197,47 +197,56 @@ resize: none
                                     <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                 </div>
                             </div>
+                            <!-- Links -->
                             <div class="bg-white">
                                 <div class="d-flex flex-row fs-12">
-                                    <div class="like p-2 cursor"><i class="fa fa-thumbs-o-up"></i><span class="ml-1">Like</span></div>
-                                    <div class="like p-2 cursor"><i class="fa fa-commenting-o"></i><span class="ml-1">Comment</span></div>
-                                    <div class="like p-2 cursor"><i class="fa fa-share"></i><span class="ml-1">Share</span></div>
+                                    <a class="btn" href="#like" role="button" aria-expanded="false" aria-controls="collapseExample">Like</a>
+                                    <a class="btn" data-bs-toggle="collapse" href="#comment" role="button" aria-expanded="false" aria-controls="comment">Comment</a>
+                                    <a class="btn" data-bs-toggle="collapse" href="#share" role="button" aria-expanded="false" aria-controls="share">Share</a>
                                 </div>
                             </div>
-                            <div class="bg-light p-2">
-                                <div class="d-flex flex-row align-items-start"><img class="rounded-circle" src="https://i.imgur.com/RpzrMR2.jpg" width="40"><textarea class="form-control ml-1 shadow-none textarea"></textarea></div>
-                                <div class="mt-2 text-right"><button class="btn btn-primary btn-sm shadow-none" type="button">Post comment</button><button class="btn btn-outline-primary btn-sm ml-1 shadow-none" type="button">Cancel</button></div>
+                            <!-- Post -->
+                            <div class="collapse" id="comment">
+                                <div class="card card-body">
+                                    <div class="bg-light p-2">
+                                        <div class="d-flex flex-row align-items-start"><img class="rounded-circle" src="https://i.imgur.com/RpzrMR2.jpg" width="40"><textarea class="form-control ml-1 shadow-none textarea"></textarea></div>
+                                        <div class="mt-2 text-right"><button class="btn btn-primary btn-sm shadow-none" type="button">Post comment</button><button class="btn btn-outline-primary btn-sm ml-1 shadow-none" type="button">Cancel</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Share -->
+                            <div class="collapse" id="share">
+                                <div class="card card-body">
+                                    Some placeholder content for the collapse component.
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!--                        </div>-->
-                    <!--                    </div>-->
-
-
-
+                    <!-- Comments and links end -->
                 </div>
             </div>
             {% endfor %}
+            <!-- Page counter -->
             {% for page_num in posts.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
-            {% if page_num %}
-            {% if posts.page == page_num %}
-            <a class="btn btn-secondary mb-4" href="{{ url_for('main.home', page=page_num) }}">{{ page_num }}</a>
-            {% else %}
-            <a class="btn btn-outline-info mb-4" href="{{ url_for('main.home', page=page_num) }}">{{ page_num }}</a>
-            {% endif %}
-            {% else %}
-            ...
-            {% endif %}
+                {% if page_num %}
+                    {% if posts.page == page_num %}
+                    <a class="btn btn-secondary mb-4" href="{{ url_for('main.home', page=page_num) }}">{{ page_num }}</a>
+                    {% else %}
+                    <a class="btn btn-outline-info mb-4" href="{{ url_for('main.home', page=page_num) }}">{{ page_num }}</a>
+                    {% endif %}
+                {% else %}
+                ...
+                {% endif %}
             {% endfor %}
+            <!-- Blog end -->
         </div>
-
+        <!-- About, Archives, and Elsewhere -->
         <div class="col-md-4">
             <div class="position-sticky" style="top: 2rem;">
                 <div class="p-4 mb-3 bg-light rounded">
                     <h4 class="fst-italic">About</h4>
                     <p class="mb-0">Customize this section to tell your visitors a little bit about your publication, writers, content, or something else entirely. Totally up to you.</p>
                 </div>
-
                 <div class="p-4">
                     <h4 class="fst-italic">Archives</h4>
                     <ol class="list-unstyled mb-0">
@@ -255,7 +264,6 @@ resize: none
                         <li><a href="#">April 2020</a></li>
                     </ol>
                 </div>
-
                 <div class="p-4">
                     <h4 class="fst-italic">Elsewhere</h4>
                     <ol class="list-unstyled">
